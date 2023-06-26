@@ -16,7 +16,7 @@ export default function restaurantsReducer(state = initialState, action) {
     case "restaurants/add":
       return {
         ...state,
-        restaurants: [...state.restaurants, action.payload],
+        restaurants: [...state.restaurants, action.payload], // this is adding in restaurants at the end, because the payload is what you're passing to your aciton
       };
 
     default:
